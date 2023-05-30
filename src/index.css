@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Roboto&family=Shantell+Sans:ital,wght@1,300&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  background-image: url("goggle.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgba(128, 128, 128, 0.2);
+  background-size: 110%;
+  background-blend-mode: multiply;
+}
+.container {
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+.column:first-child {
+  width: 600px;
+  height: 40px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15),
+    0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  padding: 0 1rem;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+.column:first-child input {
+  margin-left: 0.1rem;
+  text-indent: 5px;
+  flex-grow: 1;
+  border-radius: 30px;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+.column:nth-child(2) {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 1.5rem;
+  margin-top: 2.2rem;
+}
+.row {
+  height: 130px;
+  width: 130px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  margin-bottom: 0.58rem;
+  border-radius: 15px;
+  position: relative;
+}
+.hov.row:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  height: 50px;
+  width: 50px;
+  border-radius: 55px;
+}
+.row span {
+  font-family: "Poppins", sans-serif;
+}
+.row a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+.fa-ellipsis-vertical {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.8rem;
+}
+#overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+}
+.card {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  background-color: white;
+  height: 280px;
+  width: 550px;
+  border-radius: 15px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.card h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+.card > div {
+  display: flex;
+  flex-direction: column-reverse;
+
+  gap: 0.5rem;
+  font-family: "Shantell Sans", cursive;
+  font-size: 0.8rem;
+}
+.card > div label {
+  font-weight: bold;
+}
+.card > .first input {
+  background: rgb(241, 243, 244);
+  padding: 0.4rem;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  filter: brightness(90%);
+}
+input:focus + label,
+input:active + label {
+  color: blue;
+}
+.button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row !important;
+}
+.button input {
+  width: 80px;
+  height: 30px;
+  background-color: transparent;
+  border: 0.5px solid grey !important;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+.button input:first-child {
+  color: blue;
+}
+.fa-ellipsis-vertical {
+  margin: 0.5rem;
+  padding: 0.3rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.8);
+  border-radius: 555px;
+}
+.menu_btn{
+  cursor: pointer;
+  
+}
+.item_edit_model {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+  background-color: white;
+  top: 8%;
+  padding: 0.5rem 0;
+  width: 150px;
+  height: 90px;
+  border-radius: 8px;
+}
+.item_edit_model button {
+  font-family: "Shantell Sans", cursive;
+  border: none;
+  background-color: transparent;
+  font-size: 1.1rem;
+  flex-grow: 1;
+  cursor: pointer;
+}
+.item_edit_model button:hover{
+  background: rgba(0, 0, 0, 0.3);
+}
